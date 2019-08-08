@@ -1,33 +1,49 @@
-.App {
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css';
+
+.app{
+  max-width: 60em;
+  margin:1em auto;
+
+}
+.venues{
+  display: flex;
+  flex-wrap:wrap;
+}
+.venue{
+  border:1px rgba(219,92,67, 1) solid;
+  margin:0.5em;
+  flex: 1 0 15em;
+}
+.venue-name{
+  color: rgba(38,113,127, 1);
+}
+
+.venue-type{
+  background-color: rgba(219,92,67, 1);
+  padding:0.5em;
+  margin-right:0.5em;
+  color:white;
+}
+.venue-filters{
+  margin-top: 1em;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.venue-filter,.venue-filter:hover{
+  background-color: white;
+  color:rgba(219,92,67, 1);
+  font-weight: bold;
+  border:thin rgba(219,92,67, 1) solid !important;
+}
+.venue-filter.active{
+  background-color: rgba(219,92,67, 1) !important;
+  color:white;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.venue-popup-body img{
+  display: block;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
